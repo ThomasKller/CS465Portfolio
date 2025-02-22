@@ -70,6 +70,9 @@ export class EditTripComponent implements OnInit{
         } 
       })
     }
+    get f() {
+      return this.editForm.controls; // This makes 'f' available in the template
+    }
     public onSubmit() 
   { 
     this.submitted = true; 
